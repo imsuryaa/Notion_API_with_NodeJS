@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
   max-width: 600px;
   margin: 40px auto;
-  background-color: #305476;
+  background-color: #374757;
   color: #fff;
 }
 
@@ -56,6 +56,6 @@ header {
 .events .tags {
   margin-top: 20px;
   padding: 5px 10px;
-  background: #305476;
+  background: #052d53;
   color: #fff;
 }

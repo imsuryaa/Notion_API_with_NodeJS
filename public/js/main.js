@@ -13,20 +13,21 @@ const getEvents = async () => {
 
 const addEventsToDom = async () => {
     const events = await getEvents()
-    // console.log(events)
+    
     if(!loading) {
         loadingElement.innerHTML = ''
     }
     events.forEach(event => {
         const div = document.createElement('div')
-        div.className = 'event'
+        div.className = 'events'
         div.innerHTML = `
             <h3>${event.title}</h3>
             <ul>
-                <li><strong>Release Date: </strong>${event.date}</li>
+                <li><strong>Date: </strong>${event.date}</li>
                 <li><strong>Description: </strong>${event.description}</li>
             </ul>
             <div class='tags'>${event.tags}</div>
+            <br />
         `
         eventsElement.appendChild(div)
     })

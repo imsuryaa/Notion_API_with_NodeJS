@@ -16,7 +16,6 @@ module.exports = async function getEvents() {
     const {results} = await notion.request(payload)
     // console.log(results);
     const events = results.map(page => {
-        console.log(page.properties.Description.rich_text[0].text.content)
         return {
             id: page.id,
             title: page.properties.Name.title[0].text.content,
